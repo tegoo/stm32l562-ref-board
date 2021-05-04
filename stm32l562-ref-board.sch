@@ -1,0 +1,1273 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "STM32L562 ref board"
+Date "2021-03-13"
+Rev "1"
+Comp "https://berlev.me"
+Comment1 "Designed by Vladimir Berlev"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x02 CN1
+U 1 1 604FB2FB
+P 1550 1450
+F 0 "CN1" H 1468 1125 50  0000 C CNN
+F 1 "Conn_01x02" H 1468 1216 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1550 1450 50  0001 C CNN
+F 3 "https://www.we-online.de/katalog/datasheet/6130xx11121.pdf" H 1550 1450 50  0001 C CNN
+F 4 "732-5315-ND" H 1550 1450 50  0001 C CNN "Digi-Key SKU"
+	1    1550 1450
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 604F982B
+P 2050 1450
+F 0 "#PWR0101" H 2050 1200 50  0001 C CNN
+F 1 "GND" V 2050 1200 50  0000 C CNN
+F 2 "" H 2050 1450 50  0001 C CNN
+F 3 "" H 2050 1450 50  0001 C CNN
+	1    2050 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0102
+U 1 1 604F5811
+P 2050 1350
+F 0 "#PWR0102" H 2050 1200 50  0001 C CNN
+F 1 "+3.3V" V 2050 1600 50  0000 C CNN
+F 2 "" H 2050 1350 50  0001 C CNN
+F 3 "" H 2050 1350 50  0001 C CNN
+	1    2050 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L stm32l562-ref-board:STM32L562CET U1
+U 1 1 604D74EC
+P 8150 4200
+F 0 "U1" H 8150 4300 50  0000 C CNN
+F 1 "STM32L562CET" H 8150 4200 50  0000 C CNN
+F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 7650 2800 50  0001 R CNN
+F 3 "https://www.st.com/resource/en/datasheet/stm32l562ce.pdf" H 8150 4200 50  0001 C CNN
+F 4 "497-STM32L562CET6-ND" H 8150 4200 50  0001 C CNN "Digi-Key SKU"
+	1    8150 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 6056D13B
+P 8100 5900
+F 0 "#PWR0103" H 8100 5650 50  0001 C CNN
+F 1 "GND" H 8105 5727 50  0000 C CNN
+F 2 "" H 8100 5900 50  0001 C CNN
+F 3 "" H 8100 5900 50  0001 C CNN
+	1    8100 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 5700 7950 5800
+Wire Wire Line
+	7950 5800 8050 5800
+Wire Wire Line
+	8250 5800 8250 5700
+Wire Wire Line
+	8050 5700 8050 5800
+Connection ~ 8050 5800
+Wire Wire Line
+	8050 5800 8100 5800
+Wire Wire Line
+	8150 5700 8150 5800
+Connection ~ 8150 5800
+Wire Wire Line
+	8150 5800 8250 5800
+Wire Wire Line
+	8100 5800 8100 5900
+Connection ~ 8100 5800
+Wire Wire Line
+	8100 5800 8150 5800
+$Comp
+L Device:C C1
+U 1 1 605992CD
+P 1600 2450
+F 0 "C1" V 1450 2450 50  0000 C CNN
+F 1 "20pF" V 1750 2450 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1638 2300 50  0001 C CNN
+F 3 "https://datasheets.avx.com/C0GNP0-Dielectric.pdf" H 1600 2450 50  0001 C CNN
+F 4 "478-3735-6-ND" H 1600 2450 50  0001 C CNN "Digi-Key SKU"
+F 5 "08051A200JAT2A" H 1600 2450 50  0001 C CNN "PN"
+	1    1600 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 605986CE
+P 1600 2950
+F 0 "C2" V 1450 2950 50  0000 C CNN
+F 1 "20pF" V 1750 2950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1638 2800 50  0001 C CNN
+F 3 "https://datasheets.avx.com/C0GNP0-Dielectric.pdf" H 1600 2950 50  0001 C CNN
+F 4 "478-3735-6-ND" H 1600 2950 50  0001 C CNN "Digi-Key SKU"
+F 5 "08051A200JAT2A" H 1600 2950 50  0001 C CNN "PN"
+	1    1600 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 6059BEF0
+P 1450 2950
+F 0 "#PWR02" H 1450 2700 50  0001 C CNN
+F 1 "GND" V 1455 2822 50  0000 R CNN
+F 2 "" H 1450 2950 50  0001 C CNN
+F 3 "" H 1450 2950 50  0001 C CNN
+	1    1450 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Crystal Y1
+U 1 1 60582C29
+P 1850 2700
+F 0 "Y1" V 1850 2850 50  0000 L CNN
+F 1 "8MHz" V 1850 2950 50  0000 L CNN
+F 2 "Crystal:Crystal_HC49-U_Vertical" H 1850 2700 50  0001 C CNN
+F 3 "https://abracon.com/Resonators/ABL.pdf" H 1850 2700 50  0001 C CNN
+F 4 "535-9062-ND" H 1850 2700 50  0001 C CNN "Digi-Key SKU"
+F 5 "ABL-8.000MHZ-B2" H 1850 2700 50  0001 C CNN "PN"
+	1    1850 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 605BB263
+P 1450 2450
+F 0 "#PWR01" H 1450 2200 50  0001 C CNN
+F 1 "GND" V 1455 2322 50  0000 R CNN
+F 2 "" H 1450 2450 50  0001 C CNN
+F 3 "" H 1450 2450 50  0001 C CNN
+	1    1450 2450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1750 2450 1850 2450
+Wire Wire Line
+	1850 2450 1850 2550
+Wire Wire Line
+	1750 2950 1850 2950
+Wire Wire Line
+	1850 2950 1850 2850
+Connection ~ 1850 2450
+Wire Wire Line
+	1850 2950 1950 2950
+Connection ~ 1850 2950
+$Comp
+L Device:R R1
+U 1 1 605FDACB
+P 2100 2950
+F 0 "R1" V 2000 2950 50  0000 C CNN
+F 1 "390" V 2200 2950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2030 2950 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 2100 2950 50  0001 C CNN
+F 4 "311-390HRCT-ND" H 2100 2950 50  0001 C CNN "Digi-Key SKU"
+F 5 "RC0603FR-07390RL" H 2100 2950 50  0001 C CNN "PN"
+	1    2100 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2250 2950 2350 2950
+Wire Wire Line
+	1850 2450 2350 2450
+Text Label 2350 2450 0    50   ~ 0
+MCU_PH0
+Wire Wire Line
+	7100 3200 7550 3200
+Wire Wire Line
+	7550 3300 7100 3300
+Text Label 7100 3200 0    50   ~ 0
+MCU_PH0
+Text Label 7100 3300 0    50   ~ 0
+MCU_PH1
+Text Label 2350 2950 0    50   ~ 0
+MCU_PH1
+Wire Notes Line
+	1100 2200 2750 2200
+Wire Notes Line
+	2750 2200 2750 3250
+Wire Notes Line
+	2750 3250 1100 3250
+Wire Notes Line
+	1100 3250 1100 2200
+Text Notes 1100 2150 0    50   ~ 0
+HSE
+$Comp
+L power:GND #PWR03
+U 1 1 6064A833
+P 3450 2450
+F 0 "#PWR03" H 3450 2200 50  0001 C CNN
+F 1 "GND" V 3455 2322 50  0000 R CNN
+F 2 "" H 3450 2450 50  0001 C CNN
+F 3 "" H 3450 2450 50  0001 C CNN
+	1    3450 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 6064BDFD
+P 3450 2950
+F 0 "#PWR04" H 3450 2700 50  0001 C CNN
+F 1 "GND" V 3455 2822 50  0000 R CNN
+F 2 "" H 3450 2950 50  0001 C CNN
+F 3 "" H 3450 2950 50  0001 C CNN
+	1    3450 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 6064D648
+P 3600 2450
+F 0 "C3" V 3450 2450 50  0000 C CNN
+F 1 "10pF" V 3750 2450 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3638 2300 50  0001 C CNN
+F 3 "https://datasheets.avx.com/C0GNP0-Dielectric.pdf" H 3600 2450 50  0001 C CNN
+F 4 "478-1163-1-ND" H 3600 2450 50  0001 C CNN "Digi-Key SKU"
+F 5 "06035A100JAT2A" H 3600 2450 50  0001 C CNN "PN"
+	1    3600 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 6064DE67
+P 3600 2950
+F 0 "C4" V 3450 2950 50  0000 C CNN
+F 1 "10pF" V 3750 2950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3638 2800 50  0001 C CNN
+F 3 "https://datasheets.avx.com/C0GNP0-Dielectric.pdf" H 3600 2950 50  0001 C CNN
+F 4 "478-1163-1-ND" H 3600 2950 50  0001 C CNN "Digi-Key SKU"
+F 5 "06035A100JAT2A" H 3600 2950 50  0001 C CNN "PN"
+	1    3600 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Crystal Y2
+U 1 1 606508FE
+P 3850 2700
+F 0 "Y2" V 3850 2850 50  0000 L CNN
+F 1 "32kHZ" V 3850 3000 50  0000 L CNN
+F 2 "" H 3850 2700 50  0001 C CNN
+F 3 "https://abracon.com/Resonators/ABS05.pdf" H 3850 2700 50  0001 C CNN
+F 4 "535-11897-1-ND" H 3850 2700 50  0001 C CNN "Digi-Key SKU"
+F 5 "ABS05-32.768KHZ-9-T" H 3850 2700 50  0001 C CNN "PN"
+	1    3850 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3750 2950 3850 2950
+Wire Wire Line
+	3850 2950 3850 2850
+Wire Wire Line
+	3850 2950 4100 2950
+Connection ~ 3850 2950
+Connection ~ 3850 2450
+Wire Wire Line
+	3850 2450 3850 2550
+Wire Wire Line
+	3750 2450 3850 2450
+Wire Wire Line
+	3850 2450 4100 2450
+Text Label 4100 2450 0    50   ~ 0
+MCU_PC14
+Text Label 4100 2950 0    50   ~ 0
+MCU_PC15
+Wire Wire Line
+	7550 3700 7100 3700
+Wire Wire Line
+	7550 3800 7100 3800
+Text Label 7100 3700 0    50   ~ 0
+MCU_PC14
+Text Label 7100 3800 0    50   ~ 0
+MCU_PC15
+Wire Notes Line
+	4550 3250 3100 3250
+$Comp
+L Connector_Generic:Conn_01x03 J1
+U 1 1 606A490E
+P 3800 6200
+F 0 "J1" H 3700 5850 50  0000 C CNN
+F 1 "Conn_01x03" H 3700 5950 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3800 6200 50  0001 C CNN
+F 3 "https://www.we-online.de/katalog/datasheet/6130xx11121.pdf" H 3800 6200 50  0001 C CNN
+F 4 "732-5316-ND" H 3800 6200 50  0001 C CNN "Digi-Key SKU"
+F 5 "61300311121" H 3800 6200 50  0001 C CNN "PN"
+	1    3800 6200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 606A807F
+P 4100 6300
+F 0 "#PWR0104" H 4100 6050 50  0001 C CNN
+F 1 "GND" V 4100 6100 50  0000 C CNN
+F 2 "" H 4100 6300 50  0001 C CNN
+F 3 "" H 4100 6300 50  0001 C CNN
+	1    4100 6300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0105
+U 1 1 606AB63F
+P 4100 6100
+F 0 "#PWR0105" H 4100 5950 50  0001 C CNN
+F 1 "+3.3V" V 4100 6350 50  0000 C CNN
+F 2 "" H 4100 6100 50  0001 C CNN
+F 3 "" H 4100 6100 50  0001 C CNN
+	1    4100 6100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 606B1091
+P 4650 6200
+F 0 "R2" V 4550 6200 50  0000 C CNN
+F 1 "10K" V 4750 6200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4580 6200 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4650 6200 50  0001 C CNN
+F 4 "311-10.0KLRDKR-ND" H 4650 6200 50  0001 C CNN "Digi-Key SKU"
+F 5 "RC0402FR-0710KL" H 4650 6200 50  0001 C CNN "PN"
+	1    4650 6200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4000 6200 4500 6200
+Wire Wire Line
+	4800 6200 4950 6200
+Wire Wire Line
+	7550 3400 7100 3400
+Text Label 7100 3400 0    50   ~ 0
+MCU_PH3
+Text Label 4950 6200 0    50   ~ 0
+MCU_PH3
+Wire Wire Line
+	7550 3000 7100 3000
+Text Label 7100 3000 0    50   ~ 0
+MCU_NRST
+$Comp
+L Connector_Generic:Conn_02x07_Odd_Even CN3
+U 1 1 605173BB
+P 2400 4300
+F 0 "CN3" H 2450 3775 50  0000 C CNN
+F 1 "STDC14" H 2450 3866 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x06_P1.27mm_Vertical" H 2400 4300 50  0001 C CNN
+F 3 "https://www.we-online.de/katalog/datasheet/6220xx21121.pdf" H 2400 4300 50  0001 C CNN
+F 4 "732-5375-ND" H 2400 4300 50  0001 C CNN "Digi-Key SKU"
+F 5 "62201421121" H 2400 4300 50  0001 C CNN "PN"
+	1    2400 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 4100 3350 4100
+$Comp
+L power:+3.3V #PWR0107
+U 1 1 605D06D5
+P 2100 4100
+F 0 "#PWR0107" H 2100 3950 50  0001 C CNN
+F 1 "+3.3V" V 2100 4350 50  0000 C CNN
+F 2 "" H 2100 4100 50  0001 C CNN
+F 3 "" H 2100 4100 50  0001 C CNN
+	1    2100 4100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2700 4300 3350 4300
+Wire Wire Line
+	2700 4400 3350 4400
+Text Label 3350 4500 0    50   ~ 0
+MCU_NRST
+Wire Wire Line
+	2700 4600 3350 4600
+Wire Wire Line
+	1200 4600 2200 4600
+Wire Wire Line
+	8750 5500 8850 5500
+Wire Wire Line
+	8750 5300 8850 5300
+Wire Wire Line
+	7550 4300 7100 4300
+Wire Wire Line
+	8750 5400 8850 5400
+Wire Wire Line
+	2700 4200 3350 4200
+Wire Notes Line
+	1100 3800 3850 3800
+Wire Notes Line
+	3850 4900 1100 4900
+Wire Notes Line
+	1100 3800 1100 4900
+Wire Notes Line
+	3850 3800 3850 4900
+Text Notes 1100 3750 0    50   ~ 0
+STDC14
+Wire Wire Line
+	8750 5000 8850 5000
+Wire Wire Line
+	8750 4900 8850 4900
+$Comp
+L Device:C C6
+U 1 1 6067D15E
+P 6950 1300
+F 0 "C6" H 7065 1346 50  0000 L CNN
+F 1 "4.7uF" H 7065 1255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6988 1150 50  0001 C CNN
+F 3 "https://api.kemet.com/component-edge/download/datasheet/C0603C475K9PACTU.pdf" H 6950 1300 50  0001 C CNN
+F 4 "399-3482-1-ND" H 6950 1300 50  0001 C CNN "Digi-Key SKU"
+F 5 "C0603C475K9PACTU" H 6950 1300 50  0001 C CNN "PN"
+	1    6950 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 6068DA69
+P 7550 1300
+F 0 "C7" H 7665 1346 50  0000 L CNN
+F 1 "100nF" H 7665 1255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7588 1150 50  0001 C CNN
+F 3 "https://datasheets.avx.com/X7RDielectric.pdf" H 7550 1300 50  0001 C CNN
+F 4 "478-1395-6-ND" H 7550 1300 50  0001 C CNN "Digi-Key SKU"
+F 5 "08055C104KAT2A" H 7550 1300 50  0001 C CNN "PN"
+	1    7550 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 60697154
+P 8100 1300
+F 0 "C8" H 8215 1346 50  0000 L CNN
+F 1 "100nF" H 8215 1255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8138 1150 50  0001 C CNN
+F 3 "https://datasheets.avx.com/X7RDielectric.pdf" H 8100 1300 50  0001 C CNN
+F 4 "478-1395-6-ND" H 8100 1300 50  0001 C CNN "Digi-Key SKU"
+F 5 "08055C104KAT2A" H 8100 1300 50  0001 C CNN "PN"
+	1    8100 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 606976C3
+P 8600 1300
+F 0 "C9" H 8715 1346 50  0000 L CNN
+F 1 "100nF" H 8715 1255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8638 1150 50  0001 C CNN
+F 3 "https://datasheets.avx.com/X7RDielectric.pdf" H 8600 1300 50  0001 C CNN
+F 4 "478-1395-6-ND" H 8600 1300 50  0001 C CNN "Digi-Key SKU"
+F 5 "08055C104KAT2A" H 8600 1300 50  0001 C CNN "PN"
+	1    8600 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR07
+U 1 1 606A5F56
+P 6950 1000
+F 0 "#PWR07" H 6950 850 50  0001 C CNN
+F 1 "+3.3V" H 6965 1173 50  0000 C CNN
+F 2 "" H 6950 1000 50  0001 C CNN
+F 3 "" H 6950 1000 50  0001 C CNN
+	1    6950 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 606A6E37
+P 6950 1600
+F 0 "#PWR08" H 6950 1350 50  0001 C CNN
+F 1 "GND" H 6955 1427 50  0000 C CNN
+F 2 "" H 6950 1600 50  0001 C CNN
+F 3 "" H 6950 1600 50  0001 C CNN
+	1    6950 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 1450 7550 1500
+Wire Wire Line
+	8100 1450 8100 1500
+Connection ~ 8100 1500
+Wire Wire Line
+	8600 1450 8600 1500
+Wire Wire Line
+	8600 1500 8100 1500
+Wire Wire Line
+	7550 1150 7550 1100
+Wire Wire Line
+	7550 1100 8100 1100
+Wire Wire Line
+	8100 1100 8100 1150
+Connection ~ 8100 1100
+Wire Wire Line
+	8600 1150 8600 1100
+Wire Wire Line
+	8600 1100 8100 1100
+Wire Wire Line
+	6950 1450 6950 1500
+Wire Wire Line
+	6950 1500 7550 1500
+Connection ~ 7550 1500
+Wire Wire Line
+	6950 1150 6950 1100
+Wire Wire Line
+	6950 1100 7550 1100
+Connection ~ 7550 1100
+Wire Wire Line
+	7550 1500 8100 1500
+Wire Wire Line
+	6950 1000 6950 1100
+Connection ~ 6950 1100
+Wire Wire Line
+	6950 1600 6950 1500
+Connection ~ 6950 1500
+$Comp
+L power:+3.3V #PWR06
+U 1 1 606FB7FC
+P 9150 1000
+F 0 "#PWR06" H 9150 850 50  0001 C CNN
+F 1 "+3.3V" H 9165 1173 50  0000 C CNN
+F 2 "" H 9150 1000 50  0001 C CNN
+F 3 "" H 9150 1000 50  0001 C CNN
+	1    9150 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 606FFF90
+P 9150 1600
+F 0 "#PWR09" H 9150 1350 50  0001 C CNN
+F 1 "GND" H 9155 1427 50  0000 C CNN
+F 2 "" H 9150 1600 50  0001 C CNN
+F 3 "" H 9150 1600 50  0001 C CNN
+	1    9150 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C11
+U 1 1 60701862
+P 9750 1300
+F 0 "C11" H 9865 1346 50  0000 L CNN
+F 1 "100nF" H 9865 1255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9788 1150 50  0001 C CNN
+F 3 "https://datasheets.avx.com/X7RDielectric.pdf" H 9750 1300 50  0001 C CNN
+F 4 "478-1395-6-ND" H 9750 1300 50  0001 C CNN "Digi-Key SKU"
+F 5 "08055C104KAT2A" H 9750 1300 50  0001 C CNN "PN"
+	1    9750 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR05
+U 1 1 607247FD
+P 8350 2600
+F 0 "#PWR05" H 8350 2450 50  0001 C CNN
+F 1 "+3.3V" H 8365 2773 50  0000 C CNN
+F 2 "" H 8350 2600 50  0001 C CNN
+F 3 "" H 8350 2600 50  0001 C CNN
+	1    8350 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 2700 8150 2700
+Wire Wire Line
+	8150 2700 8150 2800
+Wire Wire Line
+	8050 2700 8050 2800
+Wire Wire Line
+	8150 2700 8250 2700
+Wire Wire Line
+	8250 2700 8250 2800
+Connection ~ 8150 2700
+Wire Wire Line
+	8250 2700 8350 2700
+Wire Wire Line
+	8350 2700 8350 2800
+Connection ~ 8250 2700
+$Comp
+L Device:C C10
+U 1 1 6076625F
+P 9150 1300
+F 0 "C10" H 9265 1346 50  0000 L CNN
+F 1 "1uF" H 9265 1255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 9188 1150 50  0001 C CNN
+F 3 "https://datasheets.avx.com/cx5r.pdf" H 9150 1300 50  0001 C CNN
+F 4 "478-2583-1-ND" H 9150 1300 50  0001 C CNN "Digi-Key SKU"
+F 5 "04026D105KAT2A" H 9150 1300 50  0001 C CNN "PN"
+	1    9150 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 1000 9150 1100
+Wire Wire Line
+	9150 1100 9750 1100
+Wire Wire Line
+	9750 1100 9750 1150
+Connection ~ 9150 1100
+Wire Wire Line
+	9150 1100 9150 1150
+Wire Wire Line
+	9150 1600 9150 1500
+Wire Wire Line
+	9150 1500 9750 1500
+Wire Wire Line
+	9750 1500 9750 1450
+Connection ~ 9150 1500
+Wire Wire Line
+	9150 1500 9150 1450
+$Comp
+L power:GND #PWR011
+U 1 1 6083B03C
+P 10400 1600
+F 0 "#PWR011" H 10400 1350 50  0001 C CNN
+F 1 "GND" H 10405 1427 50  0000 C CNN
+F 2 "" H 10400 1600 50  0001 C CNN
+F 3 "" H 10400 1600 50  0001 C CNN
+	1    10400 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10400 1450 10400 1600
+Wire Wire Line
+	10400 1000 10400 1150
+$Comp
+L Device:C C12
+U 1 1 60850EE7
+P 10400 1300
+F 0 "C12" H 10515 1346 50  0000 L CNN
+F 1 "100nF" H 10515 1255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 10438 1150 50  0001 C CNN
+F 3 "https://datasheets.avx.com/X7RDielectric.pdf" H 10400 1300 50  0001 C CNN
+F 4 "478-1395-6-ND" H 10400 1300 50  0001 C CNN "Digi-Key SKU"
+F 5 "08055C104KAT2A" H 10400 1300 50  0001 C CNN "PN"
+	1    10400 1300
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	6750 700  10850 700 
+Wire Notes Line
+	10850 700  10850 1900
+Wire Notes Line
+	10850 1900 6750 1900
+Wire Notes Line
+	6750 1900 6750 700 
+Text Notes 6750 650  0    50   ~ 0
+Decaps
+Text Notes 7150 950  0    50   ~ 0
+VDDs
+Text Notes 9300 950  0    50   ~ 0
+VDDA
+$Comp
+L Connector_Generic:Conn_01x02 CN2
+U 1 1 60919D6D
+P 2750 1450
+F 0 "CN2" H 2668 1125 50  0000 C CNN
+F 1 "Conn_01x02" H 2668 1216 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2750 1450 50  0001 C CNN
+F 3 "https://www.we-online.de/katalog/datasheet/6130xx11121.pdf" H 2750 1450 50  0001 C CNN
+F 4 "732-5315-ND" H 2750 1450 50  0001 C CNN "Digi-Key SKU"
+	1    2750 1450
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+BATT #PWR010
+U 1 1 60933370
+P 3250 1350
+F 0 "#PWR010" H 3250 1200 50  0001 C CNN
+F 1 "+BATT" V 3250 1600 50  0000 C CNN
+F 2 "" H 3250 1350 50  0001 C CNN
+F 3 "" H 3250 1350 50  0001 C CNN
+	1    3250 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+BATT #PWR016
+U 1 1 6097DE47
+P 10400 1000
+F 0 "#PWR016" H 10400 850 50  0001 C CNN
+F 1 "+BATT" H 10415 1173 50  0000 C CNN
+F 2 "" H 10400 1000 50  0001 C CNN
+F 3 "" H 10400 1000 50  0001 C CNN
+	1    10400 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR012
+U 1 1 60983ECD
+P 7950 2600
+F 0 "#PWR012" H 7950 2450 50  0001 C CNN
+F 1 "+BATT" H 7965 2773 50  0000 C CNN
+F 2 "" H 7950 2600 50  0001 C CNN
+F 3 "" H 7950 2600 50  0001 C CNN
+	1    7950 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-BATT #PWR017
+U 1 1 6099361A
+P 3250 1450
+F 0 "#PWR017" H 3250 1300 50  0001 C CNN
+F 1 "-BATT" V 3250 1700 50  0000 C CNN
+F 2 "" H 3250 1450 50  0001 C CNN
+F 3 "" H 3250 1450 50  0001 C CNN
+	1    3250 1450
+	0    1    1    0   
+$EndComp
+Text Label 3350 4100 0    50   ~ 0
+MCU_PA13
+Text Label 3350 4200 0    50   ~ 0
+MCU_PA14
+Text Label 3350 4300 0    50   ~ 0
+MCU_PB3
+Text Label 3350 4400 0    50   ~ 0
+MCU_PA15
+Wire Wire Line
+	2700 4500 3350 4500
+Text Label 8850 4900 0    50   ~ 0
+MCU_PA9
+Text Label 8850 5000 0    50   ~ 0
+MCU_PA10
+Text Label 8850 5300 0    50   ~ 0
+MCU_PA13
+Text Label 8850 5400 0    50   ~ 0
+MCU_PA14
+Text Label 8850 5500 0    50   ~ 0
+MCU_PA15
+Text Label 7100 4300 0    50   ~ 0
+MCU_PB3
+Text Notes 2750 4500 0    50   ~ 0
+NRST
+Text Notes 2750 4100 0    50   ~ 0
+JTMS/SWDIO
+Text Notes 2750 4200 0    50   ~ 0
+JTCK/SWCLK
+Text Notes 2750 4300 0    50   ~ 0
+JTDO/SWO
+Text Notes 2750 4400 0    50   ~ 0
+JTDI
+Text Notes 2750 4600 0    50   ~ 0
+VCP_TX
+Text Notes 1750 4400 0    50   ~ 0
+JRCLK
+Text Notes 1750 4500 0    50   ~ 0
+GNDDetect
+Text Notes 1750 4600 0    50   ~ 0
+VCP_RX
+$Comp
+L power:GND #PWR0108
+U 1 1 60699DC0
+P 2100 4200
+F 0 "#PWR0108" H 2100 3950 50  0001 C CNN
+F 1 "GND" V 2100 4050 50  0000 R CNN
+F 2 "" H 2100 4200 50  0001 C CNN
+F 3 "" H 2100 4200 50  0001 C CNN
+	1    2100 4200
+	0    1    1    0   
+$EndComp
+NoConn ~ 2200 4400
+NoConn ~ 2700 4000
+NoConn ~ 2200 4000
+Wire Wire Line
+	2200 4300 2200 4200
+Connection ~ 2200 4200
+Wire Wire Line
+	8350 2600 8350 2700
+Connection ~ 8350 2700
+Wire Wire Line
+	7950 2600 7950 2800
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 608F72DD
+P 3800 7400
+F 0 "J3" H 3718 7075 50  0000 C CNN
+F 1 "Conn_01x02" H 3718 7166 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3800 7400 50  0001 C CNN
+F 3 "https://www.we-online.de/katalog/datasheet/6130xx11121.pdf" H 3800 7400 50  0001 C CNN
+F 4 "732-5315-ND" H 3800 7400 50  0001 C CNN "Digi-Key SKU"
+	1    3800 7400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J4
+U 1 1 608F81FA
+P 4650 7400
+F 0 "J4" H 4568 7075 50  0000 C CNN
+F 1 "Conn_01x02" H 4568 7166 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4650 7400 50  0001 C CNN
+F 3 "https://www.we-online.de/katalog/datasheet/6130xx11121.pdf" H 4650 7400 50  0001 C CNN
+F 4 "732-5315-ND" H 4650 7400 50  0001 C CNN "Digi-Key SKU"
+	1    4650 7400
+	-1   0    0    1   
+$EndComp
+Text Label 4000 7300 0    50   ~ 0
+MCU_PA9
+Text Label 4000 7400 0    50   ~ 0
+STDC14_TX
+Text Label 4850 7300 0    50   ~ 0
+MCU_PA10
+Text Label 4850 7400 0    50   ~ 0
+STDC14_RX
+Text Label 3350 4600 0    50   ~ 0
+STDC14_TX
+Text Label 1200 4600 0    50   ~ 0
+STDC14_RX
+$Comp
+L power:+3.3V #PWR015
+U 1 1 60975D0F
+P 4100 6850
+F 0 "#PWR015" H 4100 6700 50  0001 C CNN
+F 1 "+3.3V" V 4100 7100 50  0000 C CNN
+F 2 "" H 4100 6850 50  0001 C CNN
+F 3 "" H 4100 6850 50  0001 C CNN
+	1    4100 6850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+BATT #PWR014
+U 1 1 60968A35
+P 4100 6750
+F 0 "#PWR014" H 4100 6600 50  0001 C CNN
+F 1 "+BATT" V 4100 7000 50  0000 C CNN
+F 2 "" H 4100 6750 50  0001 C CNN
+F 3 "" H 4100 6750 50  0001 C CNN
+	1    4100 6750
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 60964CD1
+P 3800 6850
+F 0 "J2" H 3718 6525 50  0000 C CNN
+F 1 "Conn_01x02" H 3718 6616 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3800 6850 50  0001 C CNN
+F 3 "https://www.we-online.de/katalog/datasheet/6130xx11121.pdf" H 3800 6850 50  0001 C CNN
+F 4 "732-5315-ND" H 3800 6850 50  0001 C CNN "Digi-Key SKU"
+	1    3800 6850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4000 6300 4100 6300
+Wire Wire Line
+	4000 6100 4100 6100
+Wire Notes Line
+	3500 5350 5450 5350
+Wire Notes Line
+	5450 5350 5450 7550
+Wire Notes Line
+	5450 7550 3500 7550
+Wire Notes Line
+	3500 7550 3500 5350
+Text Notes 3500 5300 0    50   ~ 0
+Jumpers
+Wire Wire Line
+	1750 1350 1950 1350
+Wire Wire Line
+	2950 1350 3150 1350
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 60AE807F
+P 1950 1000
+F 0 "#FLG0101" H 1950 1075 50  0001 C CNN
+F 1 "PWR_FLAG" H 1950 1173 50  0000 C CNN
+F 2 "" H 1950 1000 50  0001 C CNN
+F 3 "~" H 1950 1000 50  0001 C CNN
+	1    1950 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 60AE860D
+P 2500 1000
+F 0 "#FLG0102" H 2500 1075 50  0001 C CNN
+F 1 "PWR_FLAG" H 2500 1173 50  0000 C CNN
+F 2 "" H 2500 1000 50  0001 C CNN
+F 3 "~" H 2500 1000 50  0001 C CNN
+	1    2500 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 1450 3150 1450
+Wire Wire Line
+	1750 1450 1950 1450
+Wire Wire Line
+	1950 1450 1950 1600
+Wire Wire Line
+	1950 1600 2500 1600
+Wire Wire Line
+	3150 1600 3150 1450
+Connection ~ 1950 1450
+Wire Wire Line
+	1950 1450 2050 1450
+Connection ~ 3150 1450
+Wire Wire Line
+	3150 1450 3250 1450
+Wire Wire Line
+	1950 1000 1950 1350
+Connection ~ 1950 1350
+Wire Wire Line
+	1950 1350 2050 1350
+Wire Wire Line
+	2500 1000 2500 1600
+Wire Wire Line
+	3150 1600 2500 1600
+Connection ~ 2500 1600
+Wire Notes Line
+	1100 1750 1100 700 
+Wire Notes Line
+	1100 700  3850 700 
+Wire Notes Line
+	3850 700  3850 1750
+Wire Notes Line
+	1100 1750 3850 1750
+Text Notes 1100 650  0    50   ~ 0
+Power
+Wire Wire Line
+	7550 3600 7100 3600
+Wire Wire Line
+	7550 4000 7100 4000
+Wire Wire Line
+	7550 4100 7100 4100
+Wire Wire Line
+	7550 4200 7100 4200
+Wire Wire Line
+	7550 4400 7100 4400
+Wire Wire Line
+	7550 4500 7100 4500
+Wire Wire Line
+	7550 4600 7100 4600
+Wire Wire Line
+	7550 4700 7100 4700
+Wire Wire Line
+	7550 4800 7100 4800
+Wire Wire Line
+	7550 4900 7100 4900
+Wire Wire Line
+	7550 5000 7100 5000
+Wire Wire Line
+	7550 5100 7100 5100
+Wire Wire Line
+	7550 5200 7100 5200
+Wire Wire Line
+	7550 5300 7100 5300
+Wire Wire Line
+	7550 5400 7100 5400
+Wire Wire Line
+	7550 5500 7100 5500
+Wire Wire Line
+	8750 5200 8850 5200
+Wire Wire Line
+	8750 5100 8850 5100
+Wire Wire Line
+	8750 4800 8850 4800
+Wire Wire Line
+	8750 4700 8850 4700
+Wire Wire Line
+	8750 4600 8850 4600
+Wire Wire Line
+	8750 4500 8850 4500
+Wire Wire Line
+	8750 4400 8850 4400
+Wire Wire Line
+	8750 4300 8850 4300
+Wire Wire Line
+	8750 4200 8850 4200
+Wire Wire Line
+	8750 4100 8850 4100
+Wire Wire Line
+	8750 4000 8850 4000
+Text Label 8850 5200 0    50   ~ 0
+MCU_PA12
+Text Label 8850 5100 0    50   ~ 0
+MCU_PA11
+Text Label 7100 4000 0    50   ~ 0
+MCU_PB0
+Text Label 7100 4100 0    50   ~ 0
+MCU_PB1
+Text Label 7100 4200 0    50   ~ 0
+MCU_PB2
+Text Label 7100 4400 0    50   ~ 0
+MCU_PB4
+Text Label 7100 4500 0    50   ~ 0
+MCU_PB5
+Text Label 7100 4600 0    50   ~ 0
+MCU_PB6
+Text Label 7100 4700 0    50   ~ 0
+MCU_PB7
+Text Label 7100 4800 0    50   ~ 0
+MCU_PB8
+Text Label 7100 4900 0    50   ~ 0
+MCU_PB9
+Text Label 7100 5000 0    50   ~ 0
+MCU_PB10
+Text Label 7100 5100 0    50   ~ 0
+MCU_PB11
+Text Label 7100 5200 0    50   ~ 0
+MCU_PB12
+Text Label 7100 5300 0    50   ~ 0
+MCU_PB13
+Text Label 7100 5400 0    50   ~ 0
+MCU_PB14
+Text Label 7100 5500 0    50   ~ 0
+MCU_PB15
+Text Label 8850 4000 0    50   ~ 0
+MCU_PA0
+Text Label 8850 4100 0    50   ~ 0
+MCU_PA1
+Text Label 8850 4200 0    50   ~ 0
+MCU_PA2
+Text Label 8850 4300 0    50   ~ 0
+MCU_PA3
+Text Label 8850 4400 0    50   ~ 0
+MCU_PA4
+Text Label 8850 4500 0    50   ~ 0
+MCU_PA5
+Text Label 8850 4600 0    50   ~ 0
+MCU_PA6
+Text Label 8850 4700 0    50   ~ 0
+MCU_PA7
+Text Label 8850 4800 0    50   ~ 0
+MCU_PA8
+Text Label 7100 3600 0    50   ~ 0
+MCU_PC13
+$Comp
+L Connector_Generic:Conn_01x18 CN5
+U 1 1 60C6F417
+P 2250 6500
+F 0 "CN5" H 2200 7550 50  0000 L CNN
+F 1 "Conn_01x18" H 2000 7450 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x18_P2.54mm_Vertical" H 2250 6500 50  0001 C CNN
+F 3 "~" H 2250 6500 50  0001 C CNN
+F 4 "S1012EC-40-ND" H 2250 6500 50  0001 C CNN "Digi-Key SKU"
+	1    2250 6500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x18 CN4
+U 1 1 60C73A23
+P 1400 6500
+F 0 "CN4" H 1400 7550 50  0000 C CNN
+F 1 "Conn_01x18" H 1400 7450 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x18_P2.54mm_Vertical" H 1400 6500 50  0001 C CNN
+F 3 "~" H 1400 6500 50  0001 C CNN
+F 4 "S1012EC-40-ND" H 1400 6500 50  0001 C CNN "Digi-Key SKU"
+	1    1400 6500
+	-1   0    0    -1  
+$EndComp
+Text Label 1600 5700 0    50   ~ 0
+MCU_PA0
+Text Label 1600 5800 0    50   ~ 0
+MCU_PA1
+Text Label 1600 5900 0    50   ~ 0
+MCU_PA2
+Text Label 1600 6000 0    50   ~ 0
+MCU_PA3
+Text Label 1600 6100 0    50   ~ 0
+MCU_PA4
+Text Label 1600 6200 0    50   ~ 0
+MCU_PA5
+Text Label 1600 6300 0    50   ~ 0
+MCU_PA6
+Text Label 1600 6400 0    50   ~ 0
+MCU_PA7
+Text Label 1600 6500 0    50   ~ 0
+MCU_PA8
+Text Label 1600 6600 0    50   ~ 0
+MCU_PA9
+Text Label 1600 6700 0    50   ~ 0
+MCU_PA10
+Text Label 1600 6800 0    50   ~ 0
+MCU_PA11
+Text Label 1600 6900 0    50   ~ 0
+MCU_PA12
+Text Label 1600 7000 0    50   ~ 0
+MCU_PA13
+Text Label 1600 7100 0    50   ~ 0
+MCU_PA14
+Text Label 1600 7200 0    50   ~ 0
+MCU_PA15
+Text Label 2450 5700 0    50   ~ 0
+MCU_PB0
+Text Label 2450 5800 0    50   ~ 0
+MCU_PB1
+Text Label 2450 5900 0    50   ~ 0
+MCU_PB2
+Text Label 2450 6000 0    50   ~ 0
+MCU_PB3
+Text Label 2450 6100 0    50   ~ 0
+MCU_PB4
+Text Label 2450 6200 0    50   ~ 0
+MCU_PB5
+Text Label 2450 6300 0    50   ~ 0
+MCU_PB6
+Text Label 2450 6400 0    50   ~ 0
+MCU_PB7
+Text Label 2450 6500 0    50   ~ 0
+MCU_PB8
+Text Label 2450 6600 0    50   ~ 0
+MCU_PB9
+Text Label 2450 6700 0    50   ~ 0
+MCU_PB10
+Text Label 2450 6800 0    50   ~ 0
+MCU_PB11
+Text Label 2450 6900 0    50   ~ 0
+MCU_PB12
+Text Label 2450 7000 0    50   ~ 0
+MCU_PB13
+Text Label 2450 7100 0    50   ~ 0
+MCU_PB14
+Text Label 2450 7200 0    50   ~ 0
+MCU_PB15
+Text Label 2450 7300 0    50   ~ 0
+MCU_PC13
+Wire Wire Line
+	2200 4500 1200 4500
+Text Label 1200 4500 0    50   ~ 0
+STDC14_GNDD
+Text Label 2450 7400 0    50   ~ 0
+STDC14_GNDD
+$Comp
+L power:+3.3V #PWR0109
+U 1 1 60D5D1F7
+P 1600 7300
+F 0 "#PWR0109" H 1600 7150 50  0001 C CNN
+F 1 "+3.3V" V 1600 7400 50  0000 L CNN
+F 2 "" H 1600 7300 50  0001 C CNN
+F 3 "" H 1600 7300 50  0001 C CNN
+	1    1600 7300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 60D5ED12
+P 1600 7400
+F 0 "#PWR0110" H 1600 7150 50  0001 C CNN
+F 1 "GND" V 1600 7250 50  0000 R CNN
+F 2 "" H 1600 7400 50  0001 C CNN
+F 3 "" H 1600 7400 50  0001 C CNN
+	1    1600 7400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4000 6750 4100 6750
+Wire Wire Line
+	4000 6850 4100 6850
+Wire Notes Line
+	1100 5350 1100 7550
+Wire Notes Line
+	1100 7550 3050 7550
+Wire Notes Line
+	3050 7550 3050 5350
+Wire Notes Line
+	3050 5350 1100 5350
+Text Notes 1100 5300 0    50   ~ 0
+Pinout connectors
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 60DC3F13
+P 3150 1000
+F 0 "#FLG0103" H 3150 1075 50  0001 C CNN
+F 1 "PWR_FLAG" H 3150 1173 50  0000 C CNN
+F 2 "" H 3150 1000 50  0001 C CNN
+F 3 "~" H 3150 1000 50  0001 C CNN
+	1    3150 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 1000 3150 1350
+Connection ~ 3150 1350
+Wire Wire Line
+	3150 1350 3250 1350
+Wire Wire Line
+	2100 4200 2200 4200
+Wire Wire Line
+	2100 4100 2200 4100
+Wire Notes Line
+	6750 6200 6750 2300
+Wire Notes Line
+	6750 2300 9500 2300
+Wire Notes Line
+	9500 2300 9500 6200
+Wire Notes Line
+	6800 6200 9500 6200
+Wire Wire Line
+	5250 1350 5350 1350
+Connection ~ 5250 1350
+Wire Wire Line
+	5250 1100 5250 1350
+Wire Wire Line
+	5150 1100 5250 1100
+Wire Wire Line
+	5100 1350 5250 1350
+Wire Wire Line
+	4650 1350 4600 1350
+Connection ~ 4650 1350
+Wire Wire Line
+	4650 1100 4650 1350
+Wire Wire Line
+	4750 1100 4650 1100
+Wire Wire Line
+	4800 1350 4650 1350
+Text Notes 4250 650  0    50   ~ 0
+Reset button
+Wire Notes Line
+	4250 700  4250 1750
+Wire Notes Line
+	5800 700  4250 700 
+Wire Notes Line
+	5800 1750 5800 700 
+Wire Notes Line
+	4250 1750 5800 1750
+Text Label 5350 1350 0    50   ~ 0
+MCU_NRST
+$Comp
+L Device:C C5
+U 1 1 60730C2F
+P 4950 1350
+F 0 "C5" V 4800 1300 50  0000 L CNN
+F 1 "100nF" V 5100 1250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4988 1200 50  0001 C CNN
+F 3 "https://datasheets.avx.com/X7RDielectric.pdf" H 4950 1350 50  0001 C CNN
+F 4 "478-1395-6-ND" H 4950 1350 50  0001 C CNN "Digi-Key SKU"
+F 5 "08055C104KAT2A" H 4950 1350 50  0001 C CNN "PN"
+	1    4950 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 60730262
+P 4600 1350
+F 0 "#PWR0106" H 4600 1100 50  0001 C CNN
+F 1 "GND" V 4605 1222 50  0000 R CNN
+F 2 "" H 4600 1350 50  0001 C CNN
+F 3 "" H 4600 1350 50  0001 C CNN
+	1    4600 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 6071CE31
+P 4950 1100
+F 0 "SW1" H 4950 1385 50  0000 C CNN
+F 1 "SW_Push" H 4950 1294 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_PTS645" H 4950 1300 50  0001 C CNN
+F 3 "https://www.ckswitches.com/media/1471/pts645.pdf" H 4950 1300 50  0001 C CNN
+F 4 "CKN9087DKR-ND" H 4950 1100 50  0001 C CNN "Digi-Key SKU"
+F 5 "P45SK50SMTR92 LFS" H 4950 1100 50  0001 C CNN "PN"
+	1    4950 1100
+	1    0    0    -1  
+$EndComp
+Text Notes 3100 2150 0    50   ~ 0
+LSE
+Wire Notes Line
+	3100 3250 3100 2200
+Wire Notes Line
+	4550 2200 4550 3250
+Wire Notes Line
+	3100 2200 4550 2200
+Text Notes 6750 2250 0    50   ~ 0
+MCU
+$EndSCHEMATC
